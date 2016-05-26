@@ -1,0 +1,57 @@
+@import '../../../style/common';
+@import '../../../style/colors';
+
+.comments-form {
+  display: flex;
+  flex-direction: column;
+
+  height: 195px;
+
+  padding: 0 20px;
+
+  &_email {
+    @extend .comment-input;
+
+    margin-top: 20px;
+    height: 35px;
+    padding: 0 15px;
+
+    &::-webkit-input-placeholder {
+      color: $light-gray;
+    }
+  }
+
+  &_message {
+    @extend .comment-input;
+
+    margin-top: 15px;
+    padding: 10px 15px;
+
+    resize: none;
+  }
+
+  &_submit {
+    margin-top: 10px;
+    margin-left: auto;
+
+    width: 70px;
+    height: 30px;
+
+    background-color: $light-blue;
+    color: $light-white;
+
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+
+    cursor: pointer;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 11px;
+
+    &:hover {
+      background-color: $lighter-blue;
+    }
+  }
+}

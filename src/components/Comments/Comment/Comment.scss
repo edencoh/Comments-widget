@@ -1,0 +1,59 @@
+@import '../../../style/common';
+@import '../../../style/colors';
+
+.comment {
+  display: flex;
+  width: 100%;
+
+  list-style-type: none;
+
+  height: 45px;
+
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  &_img {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 5px;
+  }
+
+  &_content {
+    flex: 1;
+
+    height: 100%;
+    max-width: calc(100% - 55px);
+
+    padding-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: 14px;
+    font-family: sans-serif;
+
+    &_user {
+      display: flex;
+      flex: 1;
+      align-items: center;
+
+      font-weight: bold;
+
+      color: $gray;
+    }
+
+    &_text {
+      display: flex;
+      flex: 1;
+      align-items: center;
+
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      color: $darker-white;
+    }
+  }
+}

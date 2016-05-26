@@ -1,0 +1,9 @@
+@import './colors';
+
+$fonts: "Roboto", "Helvetica Neue", sans-serif;
+
+.comment-input {
+  border: 2px solid $dark-white;
+  font-family: $fonts;
+  font-size: 11px;
+}
